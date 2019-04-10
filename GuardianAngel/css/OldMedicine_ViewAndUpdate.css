@@ -1,0 +1,104 @@
+﻿
+@media(max-width:600px) {
+
+    .btp {
+        margin-top: -140px;
+    }
+}
+
+@media(min-width:600px) {
+
+    .btp {
+        margin-top: -180px;
+    }
+}
+
+
+.table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 微軟正黑體;
+    font-weight: 700;
+    padding: 3px;
+    border: 3px solid #A2CD5A;
+    border-radius: 30px;
+    border-collapse: separate;
+    background: rgba(90%,90%,90%,0.5);
+}
+
+.tableHL {
+    width: 30%;
+    font-size: 100%;
+}
+
+.tableHR {
+    width: 70%;
+    color: #003C9D;
+    font-size: 200%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tableTitleFont {
+    height: 61px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    letter-spacing: 1px;
+    border: 3px solid #FFFFFF;
+    padding: 0px;
+    width: 30%;
+    font-size: 150%
+}
+
+.tableFont {
+    width: 70%;
+    color: #003C9D;
+    font-size: 100%;
+}
+
+.tableTitleFontList {
+    width: 30%;
+    font-size: 100%;
+    text-align: center;
+}
+
+.rwd {
+    overflow-x: auto;
+}
+
+
+.auto-style2 {
+    width: 30%;
+    height: 59px;
+    color: #008844;
+    font-size: 150%;
+    text-align: center;
+}
+
+.auto-style4 {
+    font-size: large;
+}
+
+.新增樣式1 {
+    font-family: 微軟正黑體;
+}
+
+.auto-style5 {
+    font-size: large;
+    color: #000000;
+}
+
+.auto-style6 {
+    color: #000000;
+    font-weight: bold;
+    align-content: center;
+    height: 61px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 150%;
+    border: 3px solid #FFFFFF;
+    padding: 0px;
+}

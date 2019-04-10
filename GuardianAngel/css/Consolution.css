@@ -1,0 +1,39 @@
+﻿.gdstyle {
+    text-align: center;
+    align-items: center;
+}
+
+.auto-style5 {
+    margin-top: 10px;
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-size: 350%;
+    color: #888888;
+    font-weight: bold;
+    color: #131314;
+}
+
+.row {
+    margin: 0px auto;
+}
+
+.rwd {
+    overflow-x: auto;
+}
+
+.divmid {
+    margin: 0px auto;
+}
+
+
+.careFont {
+    font-family: 微軟正黑體;
+    text-align: center;
+    line-height: 100px;
+}
+
+.gdstyle {
+    text-align: center;
+    align-items: center;
+}
+

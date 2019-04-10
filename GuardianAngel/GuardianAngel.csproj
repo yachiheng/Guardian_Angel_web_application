@@ -1,0 +1,523 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8618F628-890A-470C-8392-FAC6641C5807}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuardianAngel</RootNamespace>
+    <AssemblyName>GuardianAngel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConAll.aspx" />
+    <Content Include="Consolution.aspx" />
+    <Content Include="ConsulationAdd.aspx" />
+    <Content Include="css\agency.min.css" />
+    <Content Include="css\agency_inside.css" />
+    <Content Include="css\all.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap_03.css" />
+    <Content Include="css\bootstrap_02.css" />
+    <Content Include="css\Consolution.css" />
+    <Content Include="css\fancybox_buttons.png" />
+    <Content Include="css\fancybox_loading%402x.gif" />
+    <Content Include="css\fancybox_overlay.png" />
+    <Content Include="css\fancybox_sprite%402x.png" />
+    <Content Include="css\fancybox_sprite.png" />
+    <Content Include="css\GaCare.css" />
+    <Content Include="css\hint.css" />
+    <Content Include="css\JCSS.css" />
+    <Content Include="css\JCSS2.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\navgater.min.css" />
+    <Content Include="css\newbg_101.jpg" />
+    <Content Include="css\OldMedicineRemind_List.css" />
+    <Content Include="css\OldMedicine_Add.css" />
+    <Content Include="css\OldMedicine_AddPill.css" />
+    <Content Include="css\OldMedicine_List.css" />
+    <Content Include="css\OldMedicine_ViewAndUpdate.css" />
+    <Content Include="css\r7Map.css" />
+    <Content Include="css\r7style.css" />
+    <Content Include="css\registered.css" />
+    <Content Include="css\respond_old.css" />
+    <Content Include="EmergencyContact.aspx" />
+    <Content Include="EmergencyContactUpdate.aspx" />
+    <Content Include="GaCare.aspx" />
+    <Content Include="GaCare_Add.aspx" />
+    <Content Include="GaCare_Update.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Gps.aspx" />
+    <Content Include="hintadd2.aspx" />
+    <Content Include="hintindex.aspx" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="img\bell.gif" />
+    <Content Include="img\Care.JPG" />
+    <Content Include="img\edit2.png" />
+    <Content Include="img\Emerg.JPG" />
+    <Content Include="img\Empty.jpg" />
+    <Content Include="img\Gps.JPG" />
+    <Content Include="img\header-bg3.jpg" />
+    <Content Include="img\icon\edit2.png" />
+    <Content Include="img\icon\picdelete.png" />
+    <Content Include="img\icon\plus.png" />
+    <Content Include="img\icon\search.png" />
+    <Content Include="img\icon\useguide.png" />
+    <Content Include="img\man.png" />
+    <Content Include="img\New.jpg" />
+    <Content Include="img\newbg_10.jpg" />
+    <Content Include="img\newbg_101.jpg" />
+    <Content Include="img\icon\notice.png" />
+    <Content Include="img\noQR.png" />
+    <Content Include="img\p\020e0251-cb85-457d-9fe1-86111ee49146.jpg" />
+    <Content Include="img\p\047bcc80-f4ee-42e7-83c6-c645deaefba8.jpg" />
+    <Content Include="img\p\0b562c15-2871-4737-ae9d-5b7af7f9626b.jpg" />
+    <Content Include="img\p\0c5ee0d4-11f8-4ded-835f-534647e159db.jpg" />
+    <Content Include="img\p\1258fafe-f752-4234-adaf-8e2961dadf8f.jpg" />
+    <Content Include="img\p\19e0abce-9e70-4079-81fa-6a9809e48c9a.jpg" />
+    <Content Include="img\p\234fc1a8-17bc-40c2-9709-e4269f52c60e.jpg" />
+    <Content Include="img\p\29ca56a0-0d5b-45f7-b4d2-ed53017f111a.jpg" />
+    <Content Include="img\p\2a643b5e-4593-48f3-9731-c454563848fa.jpg" />
+    <Content Include="img\p\2b4f6ab9-999a-454b-baab-7c8d2227cf10.jpg" />
+    <Content Include="img\p\3179a437-cb59-441b-8c28-8ced0dc0250a.jpg" />
+    <Content Include="img\p\36e33a9e-c17a-4306-a2c6-e8445ceef554.jpg" />
+    <Content Include="img\p\3cab81bb-1c0a-4e0b-907d-09bf90bd7e87.jpg" />
+    <Content Include="img\p\3fdbbf03-318d-42c3-827e-d1f0d6f5801f.jpg" />
+    <Content Include="img\p\442c2c62-1ab0-4fbb-968a-274f32e09e0b.jpg" />
+    <Content Include="img\p\469c9f45-4203-457e-b14d-60ad57a0de2a.jpg" />
+    <Content Include="img\p\523b29b8-25ad-4cce-8c6d-94f4f6d4fbc7.jpg" />
+    <Content Include="img\p\53237c8a-a056-4b39-9773-328fb9e6e9fb.jpg" />
+    <Content Include="img\p\59b7ebdb-ccb4-4979-aba1-0b917a53418d.jpg" />
+    <Content Include="img\p\665af802-7c71-4c70-931f-d4ed53a3efa7.jpg" />
+    <Content Include="img\p\6bd26ef7-da15-45a1-868a-ee9a95e23c04.jpg" />
+    <Content Include="img\p\706461c6-7e69-4661-a192-c48284277083.jpg" />
+    <Content Include="img\p\72d0f207-f989-4ac8-bfca-baad0ef5ddc5.jpg" />
+    <Content Include="img\p\7592901d-5847-40f4-9c4c-25a09d085b42.jpg" />
+    <Content Include="img\p\7d336760-5ca2-4958-af78-1a0e5a52f371.jpg" />
+    <Content Include="img\p\93174cbb-08e7-4e7d-9edc-95970cb3ae1b.jpg" />
+    <Content Include="img\p\960a093c-8a06-4f4e-a1ef-ba7d2c406ca1.jpg" />
+    <Content Include="img\p\ABI30.jpg" />
+    <Content Include="img\p\ac2e787e-8622-4d9e-8252-0c757d8a2486.jpg" />
+    <Content Include="img\p\af71816a-1381-482b-99c9-0084789b95ed.jpg" />
+    <Content Include="img\p\afd2a0e3-2f23-40e3-8c85-20e9aa422a1f.jpg" />
+    <Content Include="img\p\ALGIT.jpg" />
+    <Content Include="img\p\Aswell.jpg" />
+    <Content Include="img\p\b0b34991-6ed7-4c7f-96c5-1a66840c058f.jpg" />
+    <Content Include="img\p\BOWKL.jpg" />
+    <Content Include="img\p\d87d9ef4-43ff-4568-b4b1-9ed9dccb68fc.jpg" />
+    <Content Include="img\p\default.jpg" />
+    <Content Include="img\p\e28e4ee0-2aad-4256-afa2-276aea2b5655.jpg" />
+    <Content Include="img\p\f0dbc4ec-a66b-4389-a474-524586e07968.jpg" />
+    <Content Include="img\p\imdur CR Tab2.jpg" />
+    <Content Include="img\p\Mopride 5mg2.jpg" />
+    <Content Include="img\p\NORMA.jpg" />
+    <Content Include="img\p\PRAME_NO.jpg" />
+    <Content Include="img\p\prophylline2.jpg" />
+    <Content Include="img\p\question.png" />
+    <Content Include="img\p\Sinemet CR2.jpg" />
+    <Content Include="img\p\SK493.jpg" />
+    <Content Include="img\p\Tamiflu 75mg2.jpg" />
+    <Content Include="img\p\tamiflu2.jpg" />
+    <Content Include="img\p\TCSS.jpg" />
+    <Content Include="img\p\TRI10.jpg" />
+    <Content Include="img\p\Ulstal2.jpg" />
+    <Content Include="img\p\Ulwycon Tab2.jpg" />
+    <Content Include="img\p\Xylmol Oint 15gm2.jpg" />
+    <Content Include="img\p\Xylmol Supp2.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsAllDel01.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsAllDel02.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsAllDel03.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsDelete01.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsDelete02.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsDelete03.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsGeneral01.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsGeneral02.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsGeneral03.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsNotice01.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsNotice02.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsNotice03.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsRect01.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsRect02.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsRect03.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsSave01.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsSave02.jpg" />
+    <Content Include="img\r7GpsButtonIcons\r7GpsSave03.jpg" />
+    <Content Include="img\sample.png" />
+    <Content Include="img\Web.PNG" />
+    <Content Include="img\woman.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\agency.min.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact_me.js" />
+    <Content Include="js\datepicker-zh-TW.js" />
+    <Content Include="js\JJS.js" />
+    <Content Include="js\JJS2.js" />
+    <Content Include="js\jqBootstrapValidation.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.fancybox.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\r7Map.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MemberArea.aspx" />
+    <Content Include="MemberAreaUpdate.aspx" />
+    <Content Include="MemPasUpd01.aspx" />
+    <Content Include="MemPasUpd02.aspx" />
+    <Content Include="OldMedicineRemind_List.aspx" />
+    <Content Include="OldMedicine_Add.aspx" />
+    <Content Include="OldMedicine_AddPill.aspx" />
+    <Content Include="OldMedicine_List.aspx" />
+    <Content Include="OldMedicine_PillRemark.aspx" />
+    <Content Include="OldMedicine_ViewAndUpdate.aspx" />
+    <Content Include="rectSaveAPI.aspx" />
+    <Content Include="respondindexV3.aspx" />
+    <Content Include="respond_oldV3.aspx" />
+    <Content Include="SignUP.aspx" />
+    <Content Include="warningAPI.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConAll.aspx.cs">
+      <DependentUpon>ConAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConAll.aspx.designer.cs">
+      <DependentUpon>ConAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consolution.aspx.cs">
+      <DependentUpon>Consolution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consolution.aspx.designer.cs">
+      <DependentUpon>Consolution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulationAdd.aspx.cs">
+      <DependentUpon>ConsulationAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsulationAdd.aspx.designer.cs">
+      <DependentUpon>ConsulationAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyContact.aspx.cs">
+      <DependentUpon>EmergencyContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmergencyContact.aspx.designer.cs">
+      <DependentUpon>EmergencyContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyContactUpdate.aspx.cs">
+      <DependentUpon>EmergencyContactUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmergencyContactUpdate.aspx.designer.cs">
+      <DependentUpon>EmergencyContactUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GaCare.aspx.cs">
+      <DependentUpon>GaCare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GaCare.aspx.designer.cs">
+      <DependentUpon>GaCare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GaCare_Add.aspx.cs">
+      <DependentUpon>GaCare_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GaCare_Add.aspx.designer.cs">
+      <DependentUpon>GaCare_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GaCare_Update.aspx.cs">
+      <DependentUpon>GaCare_Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GaCare_Update.aspx.designer.cs">
+      <DependentUpon>GaCare_Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Gps.aspx.cs">
+      <DependentUpon>Gps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gps.aspx.designer.cs">
+      <DependentUpon>Gps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hintadd2.aspx.cs">
+      <DependentUpon>hintadd2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hintadd2.aspx.designer.cs">
+      <DependentUpon>hintadd2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hintindex.aspx.cs">
+      <DependentUpon>hintindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hintindex.aspx.designer.cs">
+      <DependentUpon>hintindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberArea.aspx.cs">
+      <DependentUpon>MemberArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberArea.aspx.designer.cs">
+      <DependentUpon>MemberArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAreaUpdate.aspx.cs">
+      <DependentUpon>MemberAreaUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberAreaUpdate.aspx.designer.cs">
+      <DependentUpon>MemberAreaUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemPasUpd01.aspx.cs">
+      <DependentUpon>MemPasUpd01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemPasUpd01.aspx.designer.cs">
+      <DependentUpon>MemPasUpd01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemPasUpd02.aspx.cs">
+      <DependentUpon>MemPasUpd02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemPasUpd02.aspx.designer.cs">
+      <DependentUpon>MemPasUpd02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldMedicineRemind_List.aspx.cs">
+      <DependentUpon>OldMedicineRemind_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldMedicineRemind_List.aspx.designer.cs">
+      <DependentUpon>OldMedicineRemind_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldMedicine_Add.aspx.cs">
+      <DependentUpon>OldMedicine_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldMedicine_Add.aspx.designer.cs">
+      <DependentUpon>OldMedicine_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldMedicine_AddPill.aspx.cs">
+      <DependentUpon>OldMedicine_AddPill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldMedicine_AddPill.aspx.designer.cs">
+      <DependentUpon>OldMedicine_AddPill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldMedicine_List.aspx.cs">
+      <DependentUpon>OldMedicine_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldMedicine_List.aspx.designer.cs">
+      <DependentUpon>OldMedicine_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldMedicine_PillRemark.aspx.cs">
+      <DependentUpon>OldMedicine_PillRemark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldMedicine_PillRemark.aspx.designer.cs">
+      <DependentUpon>OldMedicine_PillRemark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldMedicine_ViewAndUpdate.aspx.cs">
+      <DependentUpon>OldMedicine_ViewAndUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldMedicine_ViewAndUpdate.aspx.designer.cs">
+      <DependentUpon>OldMedicine_ViewAndUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rectAllDelAPI.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rectAllDelAPI.aspx.designer.cs" />
+    <Compile Include="rectSaveAPI.aspx.cs">
+      <DependentUpon>rectSaveAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rectSaveAPI.aspx.designer.cs">
+      <DependentUpon>rectSaveAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="respondindexV3.aspx.cs">
+      <DependentUpon>respondindexV3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="respondindexV3.aspx.designer.cs">
+      <DependentUpon>respondindexV3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="respond_oldV3.aspx.cs">
+      <DependentUpon>respond_oldV3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="respond_oldV3.aspx.designer.cs">
+      <DependentUpon>respond_oldV3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUP.aspx.cs">
+      <DependentUpon>SignUP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUP.aspx.designer.cs">
+      <DependentUpon>SignUP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="warningAPI.aspx.cs">
+      <DependentUpon>warningAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="warningAPI.aspx.designer.cs">
+      <DependentUpon>warningAPI.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Final - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - FTP2.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - FTP3.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - FTP4.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - FTP5.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - Web Deploy2.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - Web Deploy3.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - Web Deploy4.pubxml" />
+    <None Include="Properties\PublishProfiles\GuardianAngel - Web Deploy5.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50733</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50733/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

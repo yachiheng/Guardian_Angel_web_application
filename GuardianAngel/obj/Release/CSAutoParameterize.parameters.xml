@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Guardian_Angel-Web.config Connection String" description="Guardian_Angel 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=yachiheng.database.windows.net; Initial Catalog=Guardian_Angel-20190409084017;Persist Security Info=False;User ID=yachiheng;Password=A2xuioiji;MultipleActiveResultSets=False;Encrypt=false;TrustServerCertificate=False;Connection Timeout=30" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\個人作品DEMO\\Guardian_Angel\\WEB\\AZURE\\GuardianAngel\\GuardianAngel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Guardian_Angel']/@connectionString" />
+  </parameter>
+</parameters>

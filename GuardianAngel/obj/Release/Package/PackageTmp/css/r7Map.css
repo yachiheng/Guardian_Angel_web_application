@@ -1,0 +1,67 @@
+﻿/* 始終顯式設置地圖高度以定義包含地圖的div元素的大小。 */
+#map {
+    height: 600px;
+    width: 100%;
+}
+/* 讓頁面填滿視窗. */
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.r7MapStyle1 {
+    border-width: 3px;
+    border-style: groove;
+    border-color: #000000;
+    padding: 5px;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+#title {
+    font-family: 'Microsoft JhengHei';
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 700px;
+}
+
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+
+.auto-style1 {
+    font-family: 微軟正黑體;
+    font-size: large;
+    font-weight: bold;
+}
+
+.r7gpsbuttonDel {
+    background-image: url(../img/r7GpsDelete.png);
+}
+
+    
+

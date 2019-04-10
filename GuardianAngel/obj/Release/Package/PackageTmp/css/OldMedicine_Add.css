@@ -1,0 +1,260 @@
+﻿.myButton01 {
+    -moz-box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+    box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+    background: -moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background: -webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background: -o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background: linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad',endColorstr='#5972a7',GradientType=0);
+    background-color: #637aad;
+    border: 1px solid #314179;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3.5px 13px;
+    text-decoration: none;
+}
+
+    .myButton01:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+        background: -moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background: -webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background: -o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background: linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+        background-color: #5972a7;
+    }
+
+    .myButton01:active {
+        position: relative;
+        top: 1px;
+    }
+
+.myFont01 {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+
+/*老人資料css*/
+.careFont {
+    font-family: 微軟正黑體;
+    text-align: center;
+    line-height: 80px;
+}
+
+.fontSet {
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-size: 50px;
+    color: #EEEEEE;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 20px;
+}
+
+.tableFont {
+    width: 80%;
+    border: 0px solid #FFFFFF;
+    padding: 3px;
+    margin: 0 auto;
+    font-size: 150%;
+}
+
+.untable {
+    border: 3px solid #FFFFFF;
+}
+/*上半項目欄位*/
+.tableTitleFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 300%;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 3px solid #FFFFFF;
+    padding: 1px;
+}
+/*上半值欄位*/
+.tableCFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 300%;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 3px solid #FFFFFF;
+    padding: 10px;
+}
+/*下半寛項目欄位*/
+.tableQTitleFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 500%;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 3px solid #FFFFFF;
+    padding: 10px;
+}
+/*下半寛值欄位*/
+.tableQCFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 500%;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 3px solid #FFFFFF;
+    padding: 20px;
+}
+
+.tableQCFont2 {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 80px;
+    text-align: center;
+    background: rgba(90%,90%,90%,0.7);
+    border: 0px solid #FFFFFF;
+}
+/*按鈕列*/
+.tableQCFont3 {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 80px;
+    text-align: center;
+    background: rgba(90%,90%,90%,0.7);
+    border: 0px 0px 3px 0px solid #FFFFFF;
+}
+
+.tableHead {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 200px;
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 0px solid #ffffff;
+    background: none;
+}
+
+.tableFoot {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 0px solid #FFFFFF;
+    background: none;
+}
+
+.btnFont {
+    font-family: 微軟正黑體;
+    color: #FFFFFF;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    background-color: #666666;
+}
+/*連結鈕*/
+.btnstyle {
+    background-image: url(/img/1.png);
+}
+
+.auto-style3_1 {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    height: 128px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px;
+    border: 0px solid #FFFFFF;
+}
+
+.rwd {
+    overflow-x: auto;
+}
+
+.tableMsg {
+    font-family: 微軟正黑體;
+    color: red;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 0px solid #FFFFFF;
+    padding: 3px;
+}
+
+.auto-style4 {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-weight: bold;
+    align-content: center;
+    text-align: left;
+    letter-spacing: 1px;
+    border: 3px solid #FFFFFF;
+    padding: 10px;
+}
+
+.auto-style5 {
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-size: 300%;
+    color: #888888;
+    font-weight: bold;
+    color: #FFFFCC;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.AButton {
+    color: white;
+    font-size: large;
+    background-color: cadetblue;
+    border: 3px solid #003377;
+}
+/*按鈕樣式*/
+.gillButton {
+    color: darkblue;
+    background-color: white;
+    border: 3px solid #A2CD5A;
+    border-radius: 22px;
+    box-shadow: 7px 7px 20px 0px rgba(34,139,34,0.3);
+}
+
+    .gillButton:hover {
+        background: #A2CD5A;
+        border: 3px solid #228B22;
+    }
+
+.tableFont1 {
+    width: 90%;
+    border: 0px solid #FFFFFF;
+    padding: 3px;
+    margin: 0 auto;
+    font-size: 150%;
+}

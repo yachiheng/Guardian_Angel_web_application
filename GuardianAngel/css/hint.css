@@ -1,0 +1,179 @@
+﻿.tableTitleFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-size: 180%;
+    font-weight: bold;
+    align-content: center;
+    height: 40px;
+    width: 20%;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.5);
+    border: 3px solid #FFFFFF;
+}
+
+.myButton01 {
+    -moz-box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+    box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+    background: -moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background: -webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background: -o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+    background: linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad',endColorstr='#5972a7',GradientType=0);
+    background-color: #637aad;
+    border: 1px solid #314179;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3.5px 13px;
+    text-decoration: none;
+}
+
+    .myButton01:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+        background: -moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background: -webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background: -o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background: linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+        background-color: #5972a7;
+    }
+
+    .myButton01:active {
+        position: relative;
+        top: 1px;
+    }
+
+.myFont01 {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+.careFont {
+    font-family: 微軟正黑體;
+    text-align: center;
+    line-height: 100px;
+}
+
+.fontSet {
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-size: 10vmin;
+    color: #FFFFFF;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.tableFont {
+    width: 60%;
+    border: 0px solid #FFFFFF;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.tableQTitleFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-size: 180%;
+    font-weight: bold;
+    align-content: center;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.5);
+    border: 3px solid #FFFFFF;
+}
+
+.tableCFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-size: 180%;
+    font-weight: bold;
+    align-content: center;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 3px solid #FFFFFF;
+}
+
+.tableQCFont {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-size: 180%;
+    font-weight: bold;
+    align-content: center;
+    height: 80px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px;
+    background: rgba(90%,90%,90%,0.7);
+    border: 3px solid #FFFFFF;
+}
+
+.tableHead {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-size: 180%;
+    font-weight: bold;
+    align-content: center;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 0px solid #FFFFFF;
+    background: none;
+}
+
+.tableFoot {
+    font-family: 微軟正黑體;
+    color: #003377;
+    font-size: 180%;
+    font-weight: bold;
+    align-content: center;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 0px solid #FFFFFF;
+    background: none;
+}
+
+.btnFont {
+    font-family: 微軟正黑體;
+    color: #FFFFFF;
+    font-size: 150%;
+    height: 150px;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    background-color: #666666;
+}
+
+.rwd {
+    overflow-x: auto;
+}
+
+.auto-style5 {
+    margin-top: 10px;
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-size: 350%;
+    color: #888888;
+    font-weight: bold;
+    color: #131314;
+}
+
+.auto-style51 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+    text-transform: none;
+    font-family: 'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+}
